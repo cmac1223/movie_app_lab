@@ -1,0 +1,18 @@
+<ul>
+    <% @films.each do |film| %>
+    <li>
+        <h2>
+            <%= film.title%>
+        </h2>
+        <h5>
+            <%= film.genre%>
+        </h5>
+        <h5>
+            <%= film.year%>
+        </h5>
+        <p>
+            <%= film.synopsis%>
+        </p>     
+    </li>
+    <% end %>
+</ul>
